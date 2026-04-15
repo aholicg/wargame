@@ -1,18 +1,11 @@
-to find out volatility profile: 
-$ vol -f Triage-Memory.mem windows.info
-
-pslist:
-$  vol -f Triage-Memory.mem windows.pslist.PsList
-
-find child process of process X: PID of X -> grep for that -> process Y with PPID == PID of X.
-
 Q6: to show connection related to the sus process:
-$ vol -f Triage-Memory.mem windows.netscan | grep "3496" 
+`$ vol -f Triage-Memory.mem windows.netscan | grep "3496"`
 
-Q7: vol -f Triage-Memory.mem windows.dlllist | grep "VCRUNTIME140"
+Q7: 
+`$ vol -f Triage-Memory.mem windows.dlllist | grep "VCRUNTIME140"`
 
 Q8: download vol2 :)
-$ vol2 -f Triage-Memory.mem --profile=Win7SP1x64 procdump -p 3496 -D dump
+`$ vol2 -f Triage-Memory.mem --profile=Win7SP1x64 procdump -p 3496 -D dump`
 
 Q9: 
 `$ vol2  --profile=Win7SP1x64 -f Triage-Memory.mem hashdump`
