@@ -1,3 +1,5 @@
+// this is still a draft
+// todo: full wu+scenario
 Q6: to show connection related to the sus process:
 `$ vol -f Triage-Memory.mem windows.netscan | grep "3496"`
 
